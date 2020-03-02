@@ -3,10 +3,10 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Decompiled - A Tech Podcast!</title>
-		<link href="d/assets/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="d/assets/css/mediaelementplayer.min.css" rel="stylesheet" />
-		<link href="d/assets/css/magnific-popup.css" rel="stylesheet" />
-		<link href="d/assets/css/style.css" rel="stylesheet" />
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/mediaelementplayer.min.css" rel="stylesheet" />
+		<link href="assets/css/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/style.css" rel="stylesheet" />
 		<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -35,23 +35,21 @@
 		<meta name="twitter:image" content="http://beta.decompiled.in/assets/img/logo/xlogo.png.pagespeed.ic._oIgWkuu4L.png" />
 		<link rel="icon" href="assets/img/logo/logo.png" />
 		<link rel="shortcut icon" href="assets/img/logo/logo.png" />
-	</head>
+	</head><body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<header class="header absolute">
+			<div class="container">
+				<!-- LOGOOOOOOOOOOOO -->
+				<h1 class="logo"><a href="index.html"><img itemprop="logo" src="assets/img/logo/logo.png" title="Decompiled! Indigenous Podcast for Engineers, students makers & entrepreneurs. Tune In, listen real life experiences & stay on edge with evolving technology world. " alt="Decompiled!" /></a></h1>
+				<nav class="navigation">
+					<ul class="menu">
+						<li class="menuitem active"><a href="index.html">Home</a></li>
+						<li class="menuitem"><a href="contact.html">Contact</a></li>
+					</ul>
+					<a href="index.html#" class="btn-hamburguer-menu"><i class="fa fa-bars"></i></a>
+				</nav>
+			</div>
+		</header>
 
 
 
@@ -156,13 +154,14 @@ require $config['theme_path']."index.php";
 		</div>
 	</section>
 </footer>
-<script src="d/assets/js/jquery-1.11.min.js"></script>
-<script src="d/assets/js/modernizr.js"></script>
-<script src="d/assets/js/bootstrap.min.js"></script>
-<script src="d/assets/js/mediaelement-and-player.min.js"></script>
-<script src="d/assets/js/magnific-popup.min.js"></script>
-<script src="d/assets/js/validate.min.js"></script>
-<script src="d/assets/js/placeholder.min.js"></script>
-<script src="d/assets/js/main.js"></script>
+<script src="assets/js/jquery-1.11.min.js"></script>
+<script src="assets/js/modernizr.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/mediaelement-and-player.min.js"></script>
+<script src="assets/js/magnific-popup.min.js"></script>
+<script src="assets/js/validate.min.js"></script>
+<script src="assets/js/placeholder.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
+
