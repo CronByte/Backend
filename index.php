@@ -64,7 +64,7 @@
 # This is Free Software released under the GNU/GPL License.
 ############################################################
 session_start();
-require 'core/include.php';
+//require 'core/include.php';
 
 
 
