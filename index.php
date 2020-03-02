@@ -69,24 +69,13 @@ require 'core/include.php';
 
 
 generateRSS();
-//$episodes = getEpisodes(null);
+$episodes = getEpisodes(null);
 // Backwards comp
 //$link = str_replace('?', '', $config['link']);
 //$link = str_replace('=', '', $link);
 //$link = str_replace('$url', '', $link);
 
-if(strtolower($config['max_recent']) != 'all') {
-    $episodes = array_slice($episodes, 0, $config['max_recent']);
-}
 
-$splitted_episodes = array_chunk($episodes, intval($config['episodeperpage']));
-$episode_chunk = null;
-if(isset($_GET['page'])) {
-    $episode_chunk = $splitted_episodes[intval(($_GET['page']) - 1)];
-}
-else {
-    $episode_chunk = $splitted_episodes[0];
-}
 
 // Some translation strings
 $more = _('More');
@@ -163,6 +152,21 @@ require $config['theme_path']."index.php";
 					<h2 class="title-default">All Episodes</h2>
 					<div class="row">
 						<div class="col-sm-6 mb-40">
+<?php 
+if(strtolower($config['max_recent']) != 'all') {
+    $episodes = array_slice($episodes, 0, $config['max_recent']);
+}
+
+$splitted_episodes = array_chunk($episodes, intval($config['episodeperpage']));
+$episode_chunk = null;
+if(isset($_GET['page'])) {
+    $episode_chunk = $splitted_episodes[intval(($_GET['page']) - 1)];
+}
+else {
+    $episode_chunk = $splitted_episodes[0];
+}
+
+?>
 							<div class="podcast-card boxed">
 								<figure class="podcast-image"><a href="https://www.youtube.com/watch?v=JhJkrFcNiY4" target="_blank"><img src="./assets/img/ep/ep1-thumb.jpg" /></a></figure>
 								<div class="podcast-content">
